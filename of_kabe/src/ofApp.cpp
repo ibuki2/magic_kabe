@@ -24,9 +24,9 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-		magic_kabe.draw(mPosition.x,mPosition.y+100);
-		magic_kabe2.draw(mPosition.x , mPosition.y-480);
-		magic_kabe3.draw(mPosition.x,mPosition.y-1060);
+		magic_kabe.draw(mPosition.x,mPosition.y+100,ofGetWidth(),ofGetHeight());
+		magic_kabe2.draw(mPosition.x , mPosition.y-480, ofGetWidth(), ofGetHeight());
+		magic_kabe3.draw(mPosition.x,mPosition.y-1060, ofGetWidth(), ofGetHeight());
 		
 		if (mPosition.y >= (0, 680)) {
 			mPosition.y = (0,100);
